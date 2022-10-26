@@ -49,6 +49,7 @@ public class StatsServiceTest {
 
         Assertions.assertEquals(expectedMinSales, actualMinSales);
     }
+
     @Test
     public void GetMonthBelowAwerage() {
         StatsService service = new StatsService();
@@ -56,7 +57,7 @@ public class StatsServiceTest {
 
         long expectedMonthBelowAwerage = 5;
         long actualMonthBelowAwerage = service.monthBelowAverageSales(allSales);
-         Assertions.assertEquals(expectedMonthBelowAwerage, actualMonthBelowAwerage);
+        Assertions.assertEquals(expectedMonthBelowAwerage, actualMonthBelowAwerage);
     }
 
     @Test
